@@ -18,10 +18,10 @@ int main () {
     int x, b;
     printf("Digite um numero decimal inteiro\n");
     scanf("%d",&x);fflush(stdin);
-    printf("Digite uma base entre 2-9, os mesmos estao inclusos\n");
+    printf("Digite uma base entre 2-16, os mesmos estao inclusos\n");
     scanf("%d",&b);fflush(stdin);
-    while(b>9||b<2){
-        printf("BASE INVALIDA\nDigite uma base entre 2-9, os mesmos estao inclusos\n");
+    while(b>16||b<2){
+        printf("BASE INVALIDA\nDigite uma base entre 2-16, os mesmos estao inclusos\n");
         scanf("%d",&b);fflush(stdin);
     }
     converte(x,b);
